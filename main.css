@@ -1,0 +1,62 @@
+/* Style the buttons */
+
+.myBtnParent {
+    margin: auto;
+    text-align: center;
+}
+
+.myBtnContainer {
+    display: inline-block;
+    text-align: left;
+}
+
+.container {
+    overflow: hidden;
+    margin-bottom: -100px;
+}
+
+.filterDiv {
+    float: left;
+    display: none;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+/* The "show" class is added to the filtered elements */
+
+.show {
+    display: block;
+}
+
+
+/* Style the buttons */
+
+.newbutton {
+    text-align: left !important;
+    padding: 8px 12px;
+    background: #ffffff;
+    border: 1px solid #e8e8e2;
+    box-sizing: border-box;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 9px;
+    margin-right: 3px;
+    font-weight: 400;
+}
+
+
+/* Add a light grey background on mouse-over */
+
+.newbutton:hover {
+    background-color: #ddd;
+}
+
+
+/* Add a dark background to the active button */
+
+.newbutton.active {
+    background-color: black;
+    color: white;
+}
