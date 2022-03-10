@@ -1,0 +1,19 @@
+<script>
+    let barf = async() => await {};
+    barf.HTML = (url, id) => {
+        const resHTML = fetch(url, {
+                method: 'GET',
+                mode: 'cors',
+                cache: 'force-cache',
+            })
+            .then((r) => r.text())
+            .then((data) => (document.getElementById(id).innerHTML = data))
+            .catch((e) => console.log(e));
+        return resHTML;
+    };
+</script>
+<section id="faq" width="100%" height="640px"></section>
+
+<script>
+    barf.HTML('https://faq-nuovo.netlify.app', 'faq');
+</script>
